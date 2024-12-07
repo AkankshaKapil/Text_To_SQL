@@ -1,0 +1,7 @@
+digraph workflow_graph {
+	A [label="Start: Generate SQL Query"]
+	B [label="Execute SQL Query"]
+	C [label="Generate Response"]
+	A -> B [label="SQL Generation"]
+	B -> C [label="SQL Execution"]
+}
